@@ -61,21 +61,18 @@
 }
 
 .CreditBox{
-    display:flex;
+    /* display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
+    padding: 1em 1em 1em 1em;
     left: 0;
     right: 0;
+    width: 100fw; 
+    background-color: #263146; 
+    position:absolute;
     bottom: 0;
-    width: 100fw;
-    padding: 1em 1em 1em 1em;
-    background-color: #263146;
 }
-
-/* .CreditBox.universe{
-    justify-content: flex-end;
-} */
 
 .Credits{
     font-family: sans-serif;

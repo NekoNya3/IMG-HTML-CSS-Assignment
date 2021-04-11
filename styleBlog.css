@@ -4,11 +4,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 
 /* .body{
-    top: 0;
-    bottom:0;
-    left: 0;
-    right: 0;
+    display: flex;
+    flex-direction: column;
 } */
+
+.universe{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .navSurroundings{
     position:fixed;
@@ -63,17 +68,98 @@
     justify-content: center;
     align-items: center;
     /* the following dimensions for this class are copied except for width */
-    width: 70vw;
-    height: 78px;
+    width: 100vw;
+    height: 100vh;
     margin-left: 0.9em;
     margin-right: 0.9em;
 }
 
 .system{
-    display:grid;
-    grid-template: 2 / 3;
+    width: 70vw;
+    display:flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    display: inline-block;
     justify-content: center;
 }
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 1em 1em;
+    padding: 0!important;
+    height: auto!important;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
+    
+    
+    /* values are copied */
+}
+
+.cardPic{
+
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 100%;
+    max-width:100%;
+    max-height: 200px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.captionBox{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    font-family:'Lato';
+    line-height: 1.4285em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: bolder;
+    border-top: rgba(0, 0, 0, 0.63);
+}
+
+.cardCaption{
+    color: rgba(0,0,0,.85);
+    font-weight: 700;
+    font-size: 1.28571429em;
+    margin-top: -.21425em;
+    line-height: 1.28571429em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardCredits{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div{
+    font-family:'Lato';
+    line-height: 1.4285em;
+    font-size: 1em;
+    color: rgba(0,0,0,.4);
+}
+
+.mediumBox{
+    margin: 1rem 0;
+    padding: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* .body.CreditBox{
+    justify-content: flex-end;
+} */
+
+
+/* .CreditBox.universe{
+    display: flex;
+    justify-content: flex-end;
+} */
 
 .CreditBox{
     display:flex;
@@ -83,9 +169,10 @@
     padding: 1em 1em 1em 1em;
     left: 0;
     right: 0;
-    bottom: 0;
-    width: 100fw; /*Nothing works so far to get rid of the left and right gaps*/
+    width: 100fw; 
     background-color: #263146; 
+    position:fixed;
+    bottom: 0;
 }
 
 .Credits{
