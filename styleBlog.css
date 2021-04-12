@@ -104,6 +104,7 @@ body{
 .cards{
     display: flex;
     flex-direction: column;
+    
     background: white;
     margin: 0.5em 0.5em;
     border-radius: .28571429rem;
