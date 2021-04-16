@@ -73,13 +73,26 @@ body{
     color: #261446;
 }
 
+.surroundings{
+    width:100vw;
+    height:100vh;
+}
+
+.system{
+    width: 76vw;
+    height: 100vh;
+}
+
+.mainPage{
+    
+}
 
 .CreditBox{
     /* display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; */
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 0em 0.5em 0em;
     /* left: 0;
     right: 0; */
     width: 100vw;
