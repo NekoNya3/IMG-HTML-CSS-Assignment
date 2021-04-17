@@ -16,6 +16,8 @@ body{
     display:flex;
     flex-direction: column;
     min-width:320px;
+    overflow: hidden;
+
 }
 
 .navSurroundings{
@@ -30,6 +32,7 @@ body{
     right: 0;
     /* the following box-shadow is copied */
     box-shadow: 0px 4px 6px 0 #ede8da;
+    overflow: hidden!important;
 }
 
 .navSystem{
@@ -41,6 +44,8 @@ body{
     height: 78px;
     margin-left: 0.9em;
     margin-right: 0.9em;
+    overflow: hidden;
+
 }
 
 .navLogo{
@@ -73,18 +78,180 @@ body{
     color: #261446;
 }
 
-.surroundings{
+.mainSurroundings{
     width:100vw;
     height:100vh;
-}
-
-.system{
-    width: 76vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr; */
+    align-items: center;
 }
 
 .mainPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background-image: url('https://channeli.in//static/maintainer_site/background.svg');
+    background-size: cover;
+    background-position: center;
+    /* padding-top: 80px; */
+    overflow: hidden!important;
+
+}
+
+.mainPageSystem{
+    width: 76%;
+    height: 100%;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+
+.lcolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 70vh; */
+}
+
+.mainPageHeading{
+    font-family: 'Playfair Display';
+    font-size: 4.3em;
+    color: #f8d16c;
+    display: inline;
+    line-height: 2;
+    /*I have copied this below background image details: */
+    background-image: linear-gradient( to right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0.2) 80%, transparent 80%, transparent 100% );
+
+}
+
+.mainPageCaption{
+    color: white;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: 400;
+    line-height: 50px;
+    padding-right: 30px;
+}
+
+.rcolumn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.compImage{
+    width: 70%;
+    height: 35%;
+}
+
+.projSurroundings{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden!important;
+
+}
+
+.projectsPageSystem{
+    width: 76%;
+    height: 100%;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     
+}
+
+.projectsPageHeading{
+    font-size: 32px;
+    font-family: 'Playfair Display';
+    padding: 0em 0.8em 0.3em 0.8em;
+    /*bottom border is copied*/
+    border-bottom: 0.2em #f8d16c solid;
+}
+
+.deskImage{
+    height: 175px;
+    width: 300px;
+}
+
+.row3{
+    width: 76%;
+    height: 100%;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding: 14px 14px 14px 14px;
+    /* height: 98.6px;
+    width: 253.75px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.num{
+    /* line-height: 1.428em; */
+    overflow: hidden;
+    min-width: 320px;
+    left: 0;
+    height: 100%;
+    font-size: 15em;
+    color: rgba(248, 209, 108, 0.5);
+    font-family: 'Bebas Neue';
+}
+
+.details{
+    margin-top: 14px;
+    padding: 14px 14px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.projHead{
+    line-height: 1.4285em;
+    display: inline;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: black;
+    font-weight:bolder;
+
+}
+
+.projCap{
+
 }
 
 .CreditBox{
@@ -97,6 +264,7 @@ body{
     right: 0; */
     width: 100vw;
     background-color: #263146; 
+    overflow: hidden;
 }
 
 .Credits{
@@ -106,4 +274,6 @@ body{
     margin-left: 1em!important;
     margin-right: 1em!important;
     /* align-items: center; */
+    overflow: hidden;
+
 }
