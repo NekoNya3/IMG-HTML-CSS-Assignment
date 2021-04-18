@@ -21,6 +21,11 @@ body{
 }
 
 .navSurroundings{
+
+    /*It is persistently ignoring Overflow command
+     and keeps on making the lower scroll bar appear '^' */
+
+
     position:fixed;
     display: flex;
     flex-direction: row;
@@ -32,7 +37,8 @@ body{
     right: 0;
     /* the following box-shadow is copied */
     box-shadow: 0px 4px 6px 0 #ede8da;
-    overflow: hidden!important;
+    width:100%;
+    overflow: hidden !important;
 }
 
 .navSystem{
@@ -156,10 +162,10 @@ body{
 }
 
 .projSurroundings{
-    width:100vw;
-    height:100vh;
+    max-width:100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .projectsPage{
@@ -170,8 +176,8 @@ body{
 
 }
 
-.projectsPageSystem{
-    width: 76%;
+.System{
+    width: 76vw;
     height: 100%;
     margin-left: 0.9em;
     margin-right: 0.9em;
@@ -187,7 +193,7 @@ body{
     
 }
 
-.projectsPageHeading{
+.Heading{
     font-size: 32px;
     font-family: 'Playfair Display';
     padding: 0em 0.8em 0.3em 0.8em;
@@ -200,14 +206,22 @@ body{
     width: 300px;
 }
 
-.row3{
+.boxContainer{
     width: 76%;
     height: 100%;
     margin-left: 0.9em;
     margin-right: 0.9em;
+}
+
+.row3{
+    width: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    /* display: flex;
+    flex-direction: row; */
+    overflow:hidden;
 }
 
 .box{
@@ -221,6 +235,7 @@ body{
     justify-content: space-around;
     background-color: transparent;
 }
+
 .num{
     /* line-height: 1.428em; */
     overflow: hidden;
@@ -247,11 +262,195 @@ body{
     font-size: 20px;
     color: black;
     font-weight:bolder;
-
 }
 
 .projCap{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1em;
+    color: #999999;
 
+}
+
+.row4{
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.viewMore{
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    border:2px solid #263146;
+    color: #263146;
+    cursor: pointer;
+
+}
+
+.viewMore:hover{
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    border:2px solid #263146;
+    color: #263146;
+    background-color:#f8d06c;
+}
+
+.blogSurroundings{
+    max-width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+.blogPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden!important;
+}
+
+.blogHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.blogBody{
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blogImgBox{
+    padding: 1em 1em 1em 1em;
+}
+
+.blogImage{
+    width:300px;
+    height: 50%;
+}
+
+.blogDetails{
+    padding: 1em 1em 1em 1em;
+
+    font-family: Helvetica,'Lato' ,sans-serif;
+    margin: 0 0 1em 0;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+}
+
+.readBox{
+    margin: 1rem 0 0 0;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.read{
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    border:2px solid #263146;
+    color: #263146;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.read:hover{
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    border:2px solid #263146;
+    color: #263146;
+    background-color:#f8d06c;
+    text-decoration: none;
+
+}
+
+.contactSurroundings{
+    max-width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #293b52;
+}
+
+.contactPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden!important;
+
+}
+
+.columns{
+    /* display: flex;
+    flex-direction: row-reverse; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    width: 100%;
+}
+
+.Contact{
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.About{
+    padding: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.topic{
+    font-size: 1.5rem;
+    line-height: 2;
+    font-family: 'Bebas Neue';
+    color: white;
+    padding-top: 28px;
+}
+
+.content{
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.linkBox{
+    margin: 0 0 1em;
+    line-height: 1.4285em;
+}
+
+.contactImg{
+    width: 1.18em;
+    height: 1em;
+    display: inline-block;
+    margin: 0 0.25em 0 0;
+    color: white;
+    opacity: 100%;
+}
+
+.contactText{
+    margin: 0 0 0 12px;
+    color: #f8d16c;
 }
 
 .CreditBox{
