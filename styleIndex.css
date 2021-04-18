@@ -231,20 +231,22 @@ body{
     /* height: 98.6px;
     width: 253.75px; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background-color: transparent;
 }
 
 .num{
     /* line-height: 1.428em; */
-    overflow: hidden;
-    min-width: 320px;
+    /* overflow: hidden; */
+    min-width: 100px;
+    max-height: 80px;
     left: 0;
     height: 100%;
     font-size: 15em;
     color: rgba(248, 209, 108, 0.5);
     font-family: 'Bebas Neue';
+    background-color: transparent;
 }
 
 .details{
@@ -253,6 +255,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: transparent;
+    text-align: end;
 }
 
 .projHead{
@@ -262,6 +265,8 @@ body{
     font-size: 20px;
     color: black;
     font-weight:bolder;
+    background-color: transparent;
+
 }
 
 .projCap{
@@ -269,6 +274,8 @@ body{
     font-style: italic;
     line-height: 1em;
     color: #999999;
+    background-color: transparent;
+    display: inline;
 
 }
 
