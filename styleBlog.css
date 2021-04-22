@@ -235,6 +235,13 @@ img{
     overflow:hidden;
 }
 
+.creditsSystem{
+    width:76%;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    
+}
+
 .Credits{
     font-family: sans-serif;
     color: white;
