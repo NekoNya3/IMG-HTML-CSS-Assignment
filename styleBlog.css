@@ -60,7 +60,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     /* the following dimensions for this class are copied except for width */
-    width: 76vw;
+    width: 76%;
     height: 78px;
     margin-left: 0.9em;
     margin-right: 0.9em;
@@ -73,12 +73,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 48px;
+    /* height: auto; */
     min-width: 48px;
 }
 
 #imgLogo{
     width: 48px;
-    height: 48px;
+    height: auto;
 }
 
 .navLinks{
@@ -99,7 +100,7 @@ body{
 
 .surroundings{
     height:100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +113,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 76vw;
+    width: 76%;
 }
 
 /* .desktopView{
@@ -175,6 +176,7 @@ img{
     margin-top: -.21425em;
     line-height: 1.28571429em;
     font-family: 'Lato', sans-serif;
+    height: 52px;
 }
 
 .cardCredits{
@@ -223,14 +225,14 @@ img{
 
 
 .CreditBox{
-    /* display:flex;
+    display:flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     padding: 0.5em 0em 0.5em 0em;
     /* left: 0;
     right: 0; */
-    width: 100vw;
+    width: 100%;
     background-color: #263146; 
     overflow:hidden;
 }
@@ -244,6 +246,7 @@ img{
 
 .Credits{
     font-family: sans-serif;
+    font-size: 14px;
     color: white;
     line-height: 1.4em;
     margin-left: 1em!important;
