@@ -30,12 +30,15 @@ body{
     display:flex;
     flex-direction: column;
     min-width:320px;
+    /* height: 100vh; */
 }
 
 .container{
     display: flex;
     flex-direction: column;
     overflow:hidden;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .navSurroundings{
@@ -99,20 +102,20 @@ body{
 }
 
 .surroundings{
-    height:100vh;
+    height:100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 5em;
-    margin-bottom: 5rem;
+    margin-bottom: 0;
 }
 
 .system{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
     width: 76%;
 }
 
@@ -235,6 +238,8 @@ img{
     width: 100%;
     background-color: #263146; 
     overflow:hidden;
+    position: fixed;
+    bottom: 0;
 }
 
 .creditsSystem{
